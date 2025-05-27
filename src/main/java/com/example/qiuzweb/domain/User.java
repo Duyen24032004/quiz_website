@@ -3,6 +3,8 @@ package com.example.qiuzweb.domain;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -21,7 +23,8 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Role role;
-
+    
+    @CreationTimestamp
     @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime createdAt;
 
