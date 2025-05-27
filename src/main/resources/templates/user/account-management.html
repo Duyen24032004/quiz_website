@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý tài khoản</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-6">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold">👤 Quản lý tài khoản</h1>
+    <a href="add-account.html"
+       class="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded transition font-medium">
+      ➕ Thêm tài khoản
+    </a>
+  </div>
+
+  <section class="p-6 bg-gray-800 rounded-xl shadow-lg">
+    <h2 class="text-2xl font-semibold mb-4">Danh sách tài khoản</h2>
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="bg-gray-700">
+          <th class="p-3">#</th>
+          <th class="p-3">Tên</th>
+          <th class="p-3">Email</th>
+          <th class="p-3">Vai trò</th>
+          <th class="p-3">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-600 hover:bg-gray-800">
+          <td class="p-3">1</td>
+          <td class="p-3">Nguyễn Văn A</td>
+          <td class="p-3">a@example.com</td>
+          <td class="p-3">Admin</td>
+          <td class="p-3 space-x-2">
+            <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-3 py-1 rounded">Sửa</button>
+            <button class="bg-red-500 hover:bg-red-400 text-white px-3 py-1 rounded">Xoá</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>

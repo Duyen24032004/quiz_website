@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tạo Quiz</title>
+</head>
+<body class="bg-[#0f172a] text-white min-h-screen p-6">
+  <h1 class="text-3xl font-bold mb-6">➕ Tạo Quiz</h1>
+
+  <section class="p-6 bg-[#1e293b] rounded-xl shadow-lg text-white">
+    <form action="Cauhoi.html" method="GET" class="space-y-4">
+      <div>
+        <label class="block mb-1">Tên Quiz</label>
+        <input type="text" name="ten_quiz" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label class="block mb-1">Mô tả</label>
+        <textarea name="mo_ta" rows="3" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <div>
+        <label class="block mb-1">Danh mục</label>
+        <select name="danh_muc" class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option>Toán học</option>
+          <option>Lịch sử</option>
+          <option>Khoa học</option>
+        </select>
+      </div>
+      <p class="text-sm text-gray-400">Sau khi nhấn "Tiếp tục", bạn sẽ được chuyển đến trang nhập câu hỏi.</p>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition">Tiếp tục</button>
+    </form>
+  </section>
+</body>
+</html>

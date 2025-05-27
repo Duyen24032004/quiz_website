@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Quản lý Quiz</title>
+</head>
+<body class="bg-[#0f172a] text-white p-6">
+  <h1 class="text-3xl font-bold mb-6">📝 Quản lý Quiz</h1>
+
+  <section class="p-6 bg-[#1e293b] rounded-xl shadow-lg text-white">
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="bg-gray-700 text-white">
+          <th class="p-3">#</th>
+          <th class="p-3">Tên Quiz</th>
+          <th class="p-3">Mô tả</th>
+          <th class="p-3">Danh mục</th>
+          <th class="p-3">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-600 hover:bg-gray-800 transition">
+          <td class="p-3">1</td>
+          <td class="p-3">Quiz Toán cơ bản</td>
+          <td class="p-3">Kiểm tra kiến thức toán lớp 6</td>
+          <td class="p-3">Toán học</td>
+          <td class="p-3 space-x-2">
+            <button class="bg-yellow-500 hover:bg-yellow-400 text-black font-medium px-3 py-1 rounded text-sm transition">Sửa</button>
+            <button class="bg-red-500 hover:bg-red-400 text-white font-medium px-3 py-1 rounded text-sm transition">Xoá</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
