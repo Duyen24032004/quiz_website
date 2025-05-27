@@ -18,7 +18,6 @@ public class User {
 
     private String username;
     private String passwordHash;
-    private String fullName;
     private String email;
 
     @Enumerated(EnumType.STRING)
@@ -54,13 +53,7 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
+    
 
     public String getEmail() {
         return email;
